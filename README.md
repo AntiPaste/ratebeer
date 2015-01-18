@@ -1,2 +1,3 @@
 # ratebeer
-Ratebeer / wadror
+
+https://hidden-waters-7121.herokuapp.com/
