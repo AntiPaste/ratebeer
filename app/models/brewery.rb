@@ -1,6 +1,9 @@
 class Brewery < ActiveRecord::Base
   include RatingAverage
 
+  validates :name, presence: true
+  validates :year, :inclusion => { :in => proc { 1042..Date.current.year } }
+
   has_many :beers, dependent: :destroy
   has_many :ratings, through: :beers
 
